@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 详解</title>
+    <script src="JS文件的路径.js"></script>
+</head>
+<link href="./qf.html" />
+<body>
+    <div class="c1">西瓜甜</div>
+    <a href="#s1">
+         <img src="11414906-c60bbc1ca98d9924.png"/>
+    </a>
+
+    <div>
+        <p id="sy" class="c2"> 鲨鱼</p>
+        <p n="1" class="c1">
+            兰博基尼
+            <a> 宝马</a>
+            牛头
+        </p>
+    </div>
+    <div class="d1" id="div1">
+        <p>
+            我是第一层
+            <span>span</span>
+        </p>
+        <a>
+            <p>我是第二层</p>
+        </a>
+    </div>
+    <a id="a1" n="1" class="c1">我是自定义的key=value</a>
+    <p calss="c1">我是类</p>
+    <div id="hover1">
+        <a>我是伪类，鼠标放在我上面，我才会变</a>
+    </div>
+
+    <input type="text"/>
+    <input type="text"/>
+    <input type="password"/>
+
+    <h2>下面是穿衣服</h2>
+    <div class="s1" id="s1">穿衣服</div>
+
+    <div style="height:100px;width:500px;background-color:brown;">
+            <div class="bs">穿衣服</div>
+    </div>
+    <h2>设置隐藏</h2>
+    <input type="button" value="妹子召之即来" onclick="showDiv();"/>
+    <input type="button" value="妹子挥之即去" onclick="hideDiv();"/>
+
+    <div id="m1" class="11414906-c60bbc1ca98d9924">
+           <img src="11414906-c60bbc1ca98d9924.png" />
+    </div>
+    <!--执行脚本-->
+    <script>
+          <!--设置要显示时需要执行的函数-->
+        function showDiv() {
+                    document.getElementById('m1').classList.remove('11414906-c60bbc1ca98d9924');
+        }
+
+        <!--设置要显示时需要执行的函数-->
+           function hideDiv() {
+                 document.getElementById('m1').classList.add('11414906-c60bbc1ca98d9924');
+        }
+    </script>
+    <br/>
+    <a class="in-block1">设置display:inline-block 属性后,a标签可以设置高度了</a>
+    <a class="in-block2">设置display:inline-block 属性后,a标签可以设置高度了</a>
+    <div class="in-block1">设置display:inline-block 属性后,div标签也不独占了</div>
+    <div class="in-block2">div</div>
+    <br/>
+    <!--画个边框-->
+    <div style="height:100px;border:2px dashed blue;"></div>
+    <br/>
+    <!--边框的左侧有个小竖条-->
+    <div style="background-color:#dddddd;border-left:10px solid red;padding:20px;">搜索</div>
+    <br/>
+    <!--在head中设置边框-->
+    <div class="bk1">
+        搜索，我含有伪类属性
+    </div>
+    <!--设置标签之间的边距-->
+    <div class="margin">margin</div>
+    <div class="margin-left">margin-left</div>
+    <div class="margin-right">margin-right</div>
+    <div class="padding">padding</div>
+    <div class="padding-left">padding-left</div>
+
+    <!--利用 position 设置 返回顶部-->
+    <div class="fixed">返回顶部</div>
+    <!--abolute in relative-->
+    <div class="relative">
+        我是 relative
+        <div class="abs">
+            我是相对于 relative 的绝对位置
+        </div>
+    </div>
+</body>
+</html>

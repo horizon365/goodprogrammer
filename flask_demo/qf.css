@@ -1,0 +1,22 @@
+.c1,.c2{
+    background: url("11414906-c60bbc1ca98d9924.png") no-repeat;
+    background-size: cover;
+}
+
+#div1{
+ background: linear-gradient(red, #f0ad4e, #aaffaa);
+    #display: none;
+}
+
+div nav{
+    color: goldenrod;
+}
+
+div>nav{
+    color: aliceblue;
+}
+
+#hover1:hover{
+    color: red;
+}
+

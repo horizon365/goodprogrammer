@@ -1,0 +1,24 @@
+version: '2'
+services:
+  web:
+    image: nginx
+    networks:
+      - gtsb
+    ports:
+      - "8001:80"
+    volumes:
+      - ~/PycharmProjects/flask_demo/demo.html:/usr/share/nginx/html/demo2.html
+  proxy:
+    image: nginx
+    depends_on:
+      - web
+    networks:
+      - gtsb
+    ports:
+      - "8002:80"
+    environment:
+      - NGINX_HOST=web
+    volumes:
+      - /tmp/nginx.conf:/etc/nginx/nginx.conf
+networks:
+  gtsb:
